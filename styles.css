@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  padding: 50px 80px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  gap: 25px;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+
+  grid-template-areas:
+    "violetCont violetCont darkgreyCont whitelongCont"
+    "whiteshortCont blackCont blackCont whitelongCont";
+}
+
+.violetCont,
+.darkgreyCont,
+.whitelongCont,
+.whiteshortCont,
+.blackCont {
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.violetCont {
+  grid-area: violetCont;
+  background-color: hsl(263, 55%, 52%);
+}
+
+.darkgreyCont {
+  grid-area: darkgreyCont;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.whitelongCont {
+  grid-area: whitelongCont;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.whiteshortCont {
+  grid-area: whiteshortCont;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.blackCont {
+  grid-area: blackCont;
+  background-color: hsl(219, 29%, 14%);
+}
+
+/** white color text for the following cards */
+.violet_flex,
+.darkgrey_flex,
+.black_flex {
+  color: hsl(0, 0%, 100%);
+}
+
+/** black color text for the following cards */
+.whitelong_flex,
+.whiteshort_flex {
+  color: hsl(217, 19%, 35%);
+}
+
+/** display flex | column for all cards _flex div elements | padding for all cards */
+
+.violet_flex,
+.darkgrey_flex,
+.whitelong_flex,
+.whiteshort_flex,
+.black_flex {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+/** flex row for all cards user  */
+
+.violet_user,
+.darkgrey_user,
+.whitelong_user,
+.whiteshort_user,
+.black_user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+/** border radius for all userAvatar  */
+
+.violet_userAvatar,
+.darkgrey_userAvatar,
+.whitelong_userAvatar,
+.whiteshort_userAvatar,
+.black_userAvatar {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.violet_userText,
+.darkgrey_userText,
+.whitelong_userText,
+.whiteshort_userText,
+.black_userText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/** font size for userName  */
+
+.violet_userName,
+.darkgrey_userName,
+.whitelong_userName,
+.whiteshort_userName,
+.black_userName {
+  font-size: 0.9rem;
+}
+
+/** font size for userStatus  */
+
+.violet_userStatus,
+.darkgrey_userStatus,
+.whitelong_userStatus,
+.whiteshort_userStatus,
+.black_userStatus {
+  font-size: 0.75rem;
+}
+
+/** font size for highlight message  */
+
+.violet_highlightMessage,
+.darkgrey_highlightMessage,
+.whitelong_highlightMessage,
+.whiteshort_highlightMessage,
+.black_highlightMessage {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 15px 0 20px;
+}
+
+/** font size for full message  */
+
+.violet_fullMessage,
+.darkgrey_fullMessage,
+.whitelong_fullMessage,
+.whiteshort_fullMessage,
+.black_fullMessage {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.attribution {
+  margin-top: 20px;
+}
