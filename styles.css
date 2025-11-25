@@ -45,6 +45,13 @@ body {
 .violetCont {
   grid-area: violetCont;
   background-color: hsl(263, 55%, 52%);
+  position: relative;
+}
+
+.quotation_bg {
+  position: absolute;
+  top: 0;
+  right: 60px;
 }
 
 .darkgreyCont {
@@ -156,6 +163,7 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 15px 0 20px;
+  z-index: 1;
 }
 
 /** font size for full message  */
