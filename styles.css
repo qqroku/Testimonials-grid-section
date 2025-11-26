@@ -79,7 +79,7 @@ body {
   color: hsl(217, 19%, 35%);
 }
 
-/** display flex | column for all cards _flex div elements | padding for all cards */
+/** display flex | column for all cards _flex class div elements | padding for all cards */
 
 .violet_flex,
 .darkgrey_flex,
@@ -220,6 +220,6 @@ body {
   .whitelong_flex,
   .whiteshort_flex,
   .black_flex {
-    gap: 8px;
+    justify-content: flex-start;
   }
 }
