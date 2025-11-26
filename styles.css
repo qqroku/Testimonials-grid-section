@@ -192,6 +192,18 @@ body {
   font-size: 0.7rem;
 }
 
+@media (min-width: 1000px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-areas:
+      "violetCont violetCont"
+      "darkgreyCont whitelongCont"
+      "whiteshortCont whitelongCont"
+      "blackCont blackCont";
+  }
+}
+
 @media (min-width: 1200px) {
   body {
     padding: 50px 100px 10px;
