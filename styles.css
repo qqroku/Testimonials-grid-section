@@ -11,13 +11,19 @@ html {
 
 body {
   padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 290px;
+  min-height: 100vh;
 }
 
 .grid-container {
   display: grid;
   gap: 25px;
   width: 100%;
-  min-width: 290px;
+  /* min-width: 290px; */
   grid-template-columns: 1fr;
 
   grid-template-areas:
