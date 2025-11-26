@@ -88,7 +88,10 @@ body {
 .black_flex {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
   padding: 25px;
+  height: 100%;
 }
 
 /** flex row for all cards user  */
@@ -160,9 +163,8 @@ body {
 .whitelong_highlightMessage,
 .whiteshort_highlightMessage,
 .black_highlightMessage {
-  font-size: 1.25rem;
+  font-size: 1.25rem; /** default: 1.25 */
   font-weight: 600;
-  margin: 15px 0 20px;
   z-index: 1;
 }
 
@@ -173,7 +175,7 @@ body {
 .whitelong_fullMessage,
 .whiteshort_fullMessage,
 .black_fullMessage {
-  font-size: 0.8rem;
+  font-size: 0.8rem; /** default: 0.8rem */
   line-height: 1.5;
 }
 
@@ -190,18 +192,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
   }
 
   .grid-container {
     display: grid;
     width: 100%;
     max-width: 1440px;
-    height: auto;
     gap: 25px;
 
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
 
     grid-template-areas:
       "violetCont violetCont darkgreyCont whitelongCont"
@@ -215,17 +214,11 @@ body {
     right: 60px;
   }
 
-  /** font size for long cards highlight message */
-
-  .violet_highlightMessage,
-  .black_highlightMessage {
-    font-size: 1.15rem;
-  }
-
-  /** font size for long cards full message */
-
-  .violet_fullMessage,
-  .black_fullMessage {
-    font-size: 0.78rem;
+  .violet_flex,
+  .darkgrey_flex,
+  .whitelong_flex,
+  .whiteshort_flex,
+  .black_flex {
+    gap: 8px;
   }
 }
