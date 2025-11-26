@@ -17,6 +17,7 @@ body {
   display: grid;
   gap: 25px;
   width: 100%;
+  min-width: 290px;
   grid-template-columns: 1fr;
 
   grid-template-areas:
@@ -198,9 +199,8 @@ body {
   .grid-container {
     display: grid;
     width: 100%;
-    max-width: 1440px;
     gap: 25px;
-
+    max-width: 1200px;
     grid-template-columns: repeat(4, 1fr);
 
     grid-template-areas:
