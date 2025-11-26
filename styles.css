@@ -202,6 +202,14 @@ body {
       "whiteshortCont whitelongCont"
       "blackCont blackCont";
   }
+
+  .violet_flex,
+  .darkgrey_flex,
+  .whitelong_flex,
+  .whiteshort_flex,
+  .black_flex {
+    justify-content: flex-start;
+  }
 }
 
 @media (min-width: 1200px) {
